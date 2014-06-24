@@ -428,10 +428,18 @@ html,
 body {
   margin: 20px;
 }
+body {
+  background-color: #000;
+  color: #fff;
+}
 input,
 textarea {
   font-family: monospace;
-  color: black !important;
+  color: #000;
+}
+.scroller {
+  font-size: 2em;
+  border: solid #fff 5px;
 }
 
 

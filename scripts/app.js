@@ -278,12 +278,13 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers.input || (depth0 && depth0.input)),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
   data.buffer.push("\n</p>\n<p>\n	");
-  hashContexts = {'value': depth0,'disabled': depth0,'size': depth0};
-  hashTypes = {'value': "ID",'disabled': "BOOLEAN",'size': "INTEGER"};
+  hashContexts = {'value': depth0,'disabled': depth0,'size': depth0,'class': depth0};
+  hashTypes = {'value': "ID",'disabled': "BOOLEAN",'size': "INTEGER",'class': "STRING"};
   options = {hash:{
     'value': ("current_line"),
     'disabled': (true),
-    'size': (50)
+    'size': (50),
+    'class': ("scroller")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers.input || (depth0 && depth0.input)),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
   data.buffer.push("<br />\n</p>\n<p>\n	");
